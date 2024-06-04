@@ -474,8 +474,16 @@ h5 {
     font-weight: 400;
     font-size: 1.4rem;
     color: black;
+}
+
+.h5-center {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: black;
     text-align: center;
 }
+
 
 .h5-pink {
     color: #D9338A;
