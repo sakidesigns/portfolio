@@ -1011,7 +1011,6 @@ h5 {
 @media (max-width: 768px) {
     .layout2 {
         grid-template-columns: 1fr;
-        /* One column for smaller screens */
     }
 }
 
