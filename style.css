@@ -683,8 +683,8 @@ h5 {
 
 .background-style4 {
     background: #F5F7FA;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
