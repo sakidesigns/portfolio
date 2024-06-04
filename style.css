@@ -454,9 +454,6 @@ h4 {
     text-align: left;
 }
 
-
-
-
 .h4-grey-center {
     color: #0b085b;
     text-align: center;
@@ -477,13 +474,7 @@ h5 {
     font-weight: 400;
     font-size: 1.4rem;
     color: black;
-}
-
-.h5-kalam {
-    font-family: 'kalam', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    color: black;
+    text-align: center;
 }
 
 .h5-pink {
