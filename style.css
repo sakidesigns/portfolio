@@ -120,11 +120,11 @@ header label {
         width: 100%;
     }
 
-    header .navbar ul li a{
+    header .navbar ul li a {
         color: #000000;
     }
 
-    header .navbar ul li a:hover{
+    header .navbar ul li a:hover {
         background: #000000;
         color: #ffffff;
     }
@@ -875,7 +875,6 @@ h5 {
 
 .box-style1 {
     padding: 4rem;
-    margin-bottom: 3rem;
     border-radius: 1rem;
     background: #fff;
     height: auto;
@@ -887,7 +886,6 @@ h5 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     background: #fff;
     height: auto;
-    margin-bottom: 3rem;
 }
 
 .box-style3 {
@@ -897,14 +895,21 @@ h5 {
     height: 100%;
 }
 
+
+@media (max-width: 600px) {
+    .box-style1, .box-style2, .box-style3 {
+        padding: 2.4rem;
+    }
+}
+
 /* CARD */
 
 .card-link {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .card-link:hover .card-style2 {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .card-style1 {
@@ -966,12 +971,9 @@ h5 {
 
 .button {
     display: block;
-    /* Change display to block */
     align-self: center;
     justify-content: center;
-    /* Center the text horizontally */
     align-items: center;
-    /* Center the text vertically */
     padding: 0.4em 1em;
     text-decoration: none;
     color: #ffffff;
@@ -1003,22 +1005,25 @@ h5 {
 .layout2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     margin: 0 auto;
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
     .layout2 {
         grid-template-columns: 1fr;
     }
 }
 
-
 .layout3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -1026,8 +1031,8 @@ h5 {
 .layout4 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-column-gap: 3rem;
-    grid-row-gap: 3rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     margin: 0 auto;
     width: 100%;
     justify-items: center;
@@ -1036,7 +1041,6 @@ h5 {
 
 .layout4>div {
     height: 100%;
-    /* Set all divs inside .layout4 to have 100% height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1045,8 +1049,8 @@ h5 {
 .layout5 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 3rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     margin: 0 auto;
     width: 100%;
     justify-items: center;
@@ -1055,19 +1059,33 @@ h5 {
 
 .layout6 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-column-gap: 3rem;
-    grid-row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     margin: 0 auto;
     width: 100%;
 }
 
+@media (max-width: 600px) {
+    @media (max-width: 900px) {
+        .layout6 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .layout6 {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+
 .layout7 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* One column is 1/3, and the other is 2/3 of the grid */
-    grid-gap: 1rem;
-    /* Gap between grid items */
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -1075,23 +1093,23 @@ h5 {
 @media (max-width: 768px) {
     .layout7 {
         grid-template-columns: 1fr;
-        /* Switch to one column layout on smaller screens */
     }
 }
 
 .layout8 {
     display: flex;
     flex-direction: column;
-    grid-gap: 1rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     align-items: stretch;
-
     width: 100%;
 }
 
 .layout9 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -1106,7 +1124,8 @@ h5 {
 .layout10 {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 1rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -1121,7 +1140,8 @@ h5 {
 .layout11 {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+    grid-column-gap: 1.3rem;
+    grid-row-gap: 1.3rem;
     width: 100%;
     margin: 0 auto;
 }
