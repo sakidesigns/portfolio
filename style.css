@@ -225,6 +225,14 @@ h1 {
     text-align: center;
 }
 
+.h1-left {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: black;
+    text-align: left;
+}
+
 .h1-white {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
