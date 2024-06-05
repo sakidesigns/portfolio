@@ -1244,20 +1244,3 @@ h5 {
     }
 }
 
-
-.box-013 {
-    max-width: 400px;
-    margin: 0 auto;
-    border: 2px solid #2589d0;
-    border-radius: 3px;
-}
-
-.box-013 span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5em 0;
-    background-color: #2589d0;
-    color: #fff;
-    font-weight: 600;
-}
