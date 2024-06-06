@@ -1255,4 +1255,21 @@ h5 {
     }
 }
 
+/* LINK */
 
+.link {
+    text-decoration: none;
+    color: inherit; /* Ensures the link inherits the text color */
+    display: flex;
+    align-items: center;
+}
+
+.link h4 {
+    margin: 0; 
+}
+
+.link i {
+    margin-left: 8px; /* Adjust space between text and icon */
+    font-size: 1.2em; /* Adjust size of the icon if needed */
+    color: inherit; /* Ensures the icon inherits the text color */
+}
