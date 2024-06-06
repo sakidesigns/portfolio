@@ -160,44 +160,13 @@ header label {
     width: 100%;
 }
 
-.image-style3 {
-    width: 100%;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
-
-.image-style4 {
-    border-radius: 30px;
-    width: 100%;
-}
-
-.image-style5 {
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px -12px;
-}
-
-.image-style6 {
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.image-style7 {
-    float: left;
-    border-radius: 30px;
-    max-width: 20vw;
-    min-width: 20vw;
-    margin-right: 3rem;
-}
-
 .image-style8 {
     width: 30%;
     display: block;
     margin: 0 auto;
 }
 
-.image-style9 {
-    width: 20%;
-}
+
 
 /* WIDTH */
 
@@ -671,8 +640,7 @@ h5 {
 
 .background-style2 {
     background: white;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
@@ -695,8 +663,7 @@ h5 {
 
 .background-style6 {
     background: #eef7fd;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
@@ -707,8 +674,7 @@ h5 {
 
 .background-style8 {
     background: #F4EBF4;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
@@ -719,8 +685,7 @@ h5 {
 
 .background-style10 {
     background: #F8F2EB;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
@@ -731,8 +696,7 @@ h5 {
 
 .background-style12 {
     background: #EFF4F0;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
@@ -743,8 +707,7 @@ h5 {
 
 .background-style14 {
     background: #F5F7FA;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
     width: 100%;
 }
 
@@ -945,7 +908,6 @@ h5 {
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     background: #fff;
     height: auto;
     margin-bottom: 3rem;
