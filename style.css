@@ -143,26 +143,6 @@ header label {
     }
 }
 
-/* HEROIMAGE */
-
-@media screen and (max-width: 767px) {
-    #desktop-heroimage {
-        display: none; /* Hide the original image on phone screens */
-    }
-
-    #mobile-heroimage {
-        display: block; /* Show the alternate image on phone screens */
-        /* Additional styles if needed */
-    }
-}
-
-@media screen and (min-width: 768px) {
-    #mobile-heroimage {
-        display: none; /* Hide the mobile hero image on screens larger than phones */
-    }
-}
-
-
 /* IMAGE */
 
 .responsive-image {
