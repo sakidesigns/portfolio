@@ -664,8 +664,6 @@ h5 {
 
 /* BACKGROUND */
 
-
-
 .background-style1 {
     background: white;
     width: 100%;
@@ -871,7 +869,6 @@ h5 {
 }
 
 @media screen and (max-width: 767px) {
-
     .container-style1,
     .container-style2,
     .container-style3,
@@ -881,10 +878,7 @@ h5 {
     .container-style7,
     .container-style8,
     .container-style9 {
-        padding-top: 12%;
-        padding-bottom: 12%;
-        padding-right: 12%;
-        padding-left: 12%;
+        padding: 1.3rem;
     }
 }
 
