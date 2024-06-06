@@ -871,6 +871,23 @@ h5 {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .container-style1,
+    .container-style2,
+    .container-style3,
+    .container-style4,
+    .container-style5,
+    .container-style6,
+    .container-style7,
+    .container-style8,
+    .container-style9 {
+        padding-top: 12%;
+        padding-bottom: 12%;
+        padding-right: 12%;
+        padding-left: 12%;
+    }
+}
+
 /* BOX */
 
 .box-style1 {
@@ -909,7 +926,6 @@ h5 {
 
     .box-style1,
     .box-style2,
-    .box-style3
      {
         padding: 2.4rem;
     }
