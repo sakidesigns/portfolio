@@ -160,6 +160,15 @@ header label {
     width: 100%;
 }
 
+.image-style3 {
+    width: 100%;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+.image-style3:hover {
+    transform: scale(1.07); /* Scale down to 90% of the original size */
+}
+
 .image-style8 {
     width: 30%;
     display: block;
@@ -891,70 +900,39 @@ h5 {
     .box-style4 {
         min-height: 22rem;
     }
+
+    .box-style3 {
+        margin-bottom: 2rem;
+    }
 }
 
-/* CARD */
 
-.card-link {
+.box-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1.3rem;
+    padding-left: 1.3rem;
+}
+
+/* LINK */
+
+.link {
     text-decoration: none;
-}
-
-.card-link:hover .card-style2 {
-    transform: scale(1.05);
-}
-
-.card-style1 {
+    color: inherit; /* Ensures the link inherits the text color */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 1rem;
-    background: #fff;
-    height: auto;
-    margin-bottom: 3rem;
+    align-items: center;
 }
 
-.card-image {
-    overflow: hidden;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+.link h4 {
+    margin: 0; 
 }
 
-.card-image img {
-    width: 150%;
-    height: auto;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    display: block;
-    margin: 0 auto;
+.link i {
+    margin-left: 8px; /* Adjust space between text and icon */
+    font-size: 1.2em; /* Adjust size of the icon if needed */
+    color: inherit; /* Ensures the icon inherits the text color */
 }
-
-.card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 3rem;
-    height: 100%;
-}
-
-
-.card-style2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    background: #fff;
-    margin-bottom: 3rem;
-}
-
-.card-content2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 3rem;
-}
-
-
 
 /* BUTTON */
 
@@ -1217,21 +1195,3 @@ h5 {
     }
 }
 
-/* LINK */
-
-.link {
-    text-decoration: none;
-    color: inherit; /* Ensures the link inherits the text color */
-    display: flex;
-    align-items: center;
-}
-
-.link h4 {
-    margin: 0; 
-}
-
-.link i {
-    margin-left: 8px; /* Adjust space between text and icon */
-    font-size: 1.2em; /* Adjust size of the icon if needed */
-    color: inherit; /* Ensures the icon inherits the text color */
-}
