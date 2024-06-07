@@ -9,8 +9,10 @@ html {
 }
 
 body {
-    padding-top: 4rem; /* Add padding equal to the height of the header */
+    padding-top: 4rem;
+    /* Add padding equal to the height of the header */
 }
+
 /* HEADER */
 
 header {
@@ -175,7 +177,7 @@ header label {
 }
 
 .image-style4 {
-    width: 70%;
+    width: 0%;
     display: block;
     margin: 0 auto;
 }
@@ -908,17 +910,6 @@ h5 {
     /* Centers the image in the div */
 }
 
-.box-style5 {
-    flex-direction: column;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    /* Horizontally centers the item */
-    align-items: center;
-    /* Vertically centers the item */
-    height: auto;
-    border-radius: 1rem;
-}
 
 @media (max-width: 600px) {
 
@@ -944,9 +935,17 @@ h5 {
 .box-caption {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 1.3rem;
-    margin-bottom: 3rem;
+    padding-top: 1.3rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+
+    /* Adjust the max-width value according to your phone screen breakpoint */
+    .box-caption {
+        margin-bottom: 0rem;
+        /* Margin for phone screens */
+    }
 }
 
 /* LINK */
