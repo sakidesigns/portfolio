@@ -400,6 +400,11 @@ h4 {
     font-size: 2rem;
 }
 
+.h4-white-center {
+    color: #ffffff;
+    text-align: center;
+}
+
 .h4-grey-center {
     color: #0b085b;
     text-align: center;
