@@ -1231,3 +1231,20 @@ h5 {
         white-space: normal;
     }
 }
+
+/* LIST */
+
+.list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.list li {
+    border-bottom: 1px solid #ccc; /* Add a line between items */
+    padding: 1rem 0; /* Add padding for spacing */
+}
+
+.list li:last-child {
+    border-bottom: none; /* Remove the border from the last item */
+}
