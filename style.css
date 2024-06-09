@@ -910,7 +910,11 @@ h5 {
     .container-style7,
     .container-style8,
     .container-style9 {
-        padding: 1.3rem;
+        padding-right: 1.3rem;
+        padding-left: 1.3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
     }
 }
 
