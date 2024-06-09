@@ -173,8 +173,9 @@ header label {
 
 .image-style4 {
     float: right;
-    padding: 30px;
-    max-width: 40%;
+    max-width: 60%;
+    padding-left: 40px; /* Adjust the value as needed */
+    padding-bottom: 40px; /* Adjust the value as needed */
 }
 
 .image-style3:hover {
