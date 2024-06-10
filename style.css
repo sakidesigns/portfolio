@@ -183,7 +183,7 @@ header label {
         float: none; /* Remove float to allow full width */
         max-width: 100%; /* Occupy full width of the container */
         padding-left: 0; /* Remove left padding */
-        padding-bottom: 0; /* Remove bottom padding */
+        padding-bottom: 1.3rem; /* Remove bottom padding */
     }
 }
 
