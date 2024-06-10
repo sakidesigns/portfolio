@@ -177,19 +177,17 @@ header label {
     padding-left: 40px; /* Adjust the value as needed */
     padding-bottom: 40px; /* Adjust the value as needed */
 }
-
+@media only screen and (max-width: 600px) {
+      .image-style4 {
+        width: 100%;
+        /* Centers the div horizontally */
+      }/* Your CSS styles for phone-sized screens go here */
+}
 .image-style3:hover {
     transform: scale(1.07);
     /* Scale down to 90% of the original size */
 }
 
-
-@media screen and (min-width: 1600px) {
-    .image-style4 {
-        width: 100%;
-        /* Centers the div horizontally */
-    }
-}
 .image-style8 {
     width: 30%;
     display: block;
