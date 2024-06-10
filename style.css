@@ -171,6 +171,11 @@ header label {
     /* Smooth transition for the hover effect */
 }
 
+.image-style3:hover {
+    transform: scale(1.07);
+    /* Scale down to 90% of the original size */
+}
+
 .image-style4 {
     float: right;
     max-width: 60%;
@@ -178,15 +183,18 @@ header label {
     padding-bottom: 40px; /* Adjust the value as needed */
 }
 
-.image-style3:hover {
-    transform: scale(1.07);
-    /* Scale down to 90% of the original size */
+.image-style5 {
+    width: 100%;
+    border-radius: 1rem;
 }
 
-.image-style4 {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
+@media screen and (max-width: 767px) {
+    .image-style4 {
+        float: none; /* Remove float to allow full width */
+        max-width: 100%; /* Occupy full width of the container */
+        padding-left: 0; /* Remove left padding */
+        padding-bottom: 1.3rem; /* Remove bottom padding */
+    }
 }
 
 .image-style8 {
@@ -194,9 +202,6 @@ header label {
     display: block;
     margin: 0 auto;
 }
-
-
-
 
 /* WIDTH */
 
