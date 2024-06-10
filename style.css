@@ -183,11 +183,7 @@ header label {
     /* Scale down to 90% of the original size */
 }
 
-.image-style4 {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-}
+
 @media screen and (min-width: 1600px) {
     .image-style4 {
         width: 100%;
