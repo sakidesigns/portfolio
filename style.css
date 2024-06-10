@@ -188,7 +188,12 @@ header label {
     display: block;
     margin: 0 auto;
 }
-
+@media screen and (min-width: 1600px) {
+    .image-style4 {
+        width: 100%;
+        /* Centers the div horizontally */
+    }
+}
 .image-style8 {
     width: 30%;
     display: block;
