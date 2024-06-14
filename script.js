@@ -14,6 +14,7 @@ $(document).ready(function () {
     });
 });
 
+
 document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('#filter .button-style1');
     const boxes = document.querySelectorAll('.box-style3');
@@ -29,17 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
             const filter = this.getAttribute('data-filter');
 
             boxes.forEach(box => {
-                if (filter === 'all') {
+                const categories = box.getAttribute('data-category').split(' '); // Split categories by space
+
+                if (filter === 'all' || categories.includes(filter)) { // Check if the box has the filter category
                     box.style.display = 'block';
                 } else {
-                    if (box.getAttribute('data-category') === filter) {
-                        box.style.display = 'block';
-                    } else {
-                        box.style.display = 'none';
-                    }
+                    box.style.display = 'none';
                 }
             });
         });
     });
 });
+
 
