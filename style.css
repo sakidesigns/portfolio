@@ -82,6 +82,7 @@ body {
     background: #F8F2EB;
     border-radius: 1rem;
     width: 100%;
+    position: relative; 
 }
 
 .background-style11 {
