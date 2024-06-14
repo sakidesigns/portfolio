@@ -70,6 +70,7 @@ body {
 .background-style8 {
     background: #F4EBF4;
     border-radius: 1rem;
+    
     width: 100%;
 }
 
@@ -82,6 +83,7 @@ body {
     background: #F8F2EB;
     border-radius: 1rem;
     width: 100%;
+    position: relative; 
 }
 
 .background-style11 {
@@ -204,7 +206,7 @@ body {
     border: none;
     outline: 1px solid #000;
     /* Black outline */
-    margin: 8px;
+    margin: 7px;
     padding: 8px 15px;
     background-color: #fff;
     color: #000;
@@ -244,6 +246,22 @@ body {
     }
 }
 
+.button-style2 {
+    border: none;
+    margin: 7px;
+    padding: 8px 15px;
+    background-color: #00000038;
+    color: #ffffff;
+    border-radius: 45px;
+    font-family: sans-serif;
+    font-size: 17px;
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure the button appears above other content */
+}
+
+
 /* FILTER */
 
 #filter {
@@ -251,7 +269,6 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
 
 /* CONTAINER */
 
@@ -876,6 +893,7 @@ header {
     z-index: 1000;
     height: 4rem;
     font-family: sans-serif;
+    z-index: 1001;
 }
 
 header .logo {
@@ -1074,7 +1092,6 @@ header label {
 .image-style3 {
     width: 100%;
     transition: transform 0.3s ease-in-out;
-    /* Smooth transition for the hover effect */
 }
 
 .image-style3:hover {
@@ -1342,7 +1359,14 @@ header label {
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
   }
-  
+
+  @media only screen and (max-width: 767px) {
+    .progress-wrap {
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+
   .progress-wrap.active-progress {
     opacity: 1;
     visibility: visible;
