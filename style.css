@@ -270,6 +270,27 @@ body {
     z-index: 1000;
 }
 
+.button-style3 {
+    border: none;
+    margin-top: 2rem;
+    padding: 14px 25px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 45px;
+    font-family: sans-serif;
+    font-size: 17px;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+}
+
+.button-style3:hover {
+    /* Active state styling */
+    background-color: #ffffff;
+    /* Black background on hover and active */
+    color: #000000;
+    outline: 2px solid #000;
+}
 
 /* FILTER */
 
@@ -284,7 +305,8 @@ body {
 /* Media query for mobile phones */
 @media (max-width: 480px) {
     #filter {
-        margin-bottom: 0px; /* Adjust margin for mobile screens */
+        margin-bottom: 0px;
+        /* Adjust margin for mobile screens */
         margin-top: 0rem;
     }
 }
@@ -1029,66 +1051,6 @@ header label {
         display: initial;
     }
 }
-
-.sub-navbar-wrapper {
-    position: fixed;
-    padding: 10px;
-    border-radius: 45px;
-    background-color: #ffffffaf;
-    width: fit-content;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-top: 20px;
-}
-
-.sub-navbar {
-    width: 100%;
-}
-
-.sub-navbar ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.sub-navbar li {
-    display: inline-block;
-}
-
-.sub-navbar ul li {
-    padding: 0 10px;
-    /* Adjust the padding as needed */
-}
-
-.sub-navbar a {
-    font-size: 19px;
-    color: #000000;
-    width: 8rem;
-    display: block;
-    text-decoration: none;
-    padding: 12px;
-    font-family: sans-serif;
-    transition: 0.4s;
-    font-size: 1rem;
-    border-radius: 45px;
-    background: #ffffffb6;
-}
-
-.sub-navbar a:hover {
-    background: #ffffff;
-    transition: 0.4s;
-    border-radius: 45px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.sub-navbar a.live-button {
-    background-color: rgb(0, 0, 0);
-
-    color: #ffffff;
-    /* Different color for the last button */
-}
-
 
 /* IMAGE */
 
