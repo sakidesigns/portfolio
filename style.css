@@ -37,11 +37,13 @@ body {
     background: white;
     border-radius: 1rem;
     width: 100%;
+    position: relative;
 }
 
 .background-style3 {
     background: #F5F7FA;
     width: 100%;
+    position: relative;
 }
 
 .background-style4 {
@@ -49,62 +51,72 @@ body {
     border-radius: 1rem;
     border-radius: 1rem;
     width: 100%;
+    position: relative;
 }
 
 .background-style5 {
     background: #eef7fd;
     width: 100%;
+    position: relative;
 }
 
 .background-style6 {
     background: #eef7fd;
     border-radius: 1rem;
     width: 100%;
+    position: relative;
 }
 
 .background-style7 {
     background: #F4EBF4;
     width: 100%;
+    position: relative;
 }
 
 .background-style8 {
     background: #F4EBF4;
     border-radius: 1rem;
     width: 100%;
+    position: relative;
 }
 
 .background-style9 {
     background: #F8F2EB;
     width: 100%;
+    position: relative;
 }
 
 .background-style10 {
     background: #F8F2EB;
     border-radius: 1rem;
     width: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .background-style11 {
     background: #EFF4F0;
     width: 100%;
+    position: relative;
 }
 
 .background-style12 {
     background: #EFF4F0;
     border-radius: 1rem;
     width: 100%;
+    position: relative;
 }
 
 .background-style13 {
     background: #F5F7FA;
     width: 100%;
+    position: relative;
 }
 
 .background-style14 {
     background: #F5F7FA;
     border-radius: 1rem;
     width: 100%;
+    position: relative;
 }
 
 .background-style15 {
@@ -118,12 +130,14 @@ body {
 .background-style16 {
     background: #E8F2FD;
     width: 100%;
+    position: relative;
 }
 
 .background-style17 {
     background: #E8F2FD;
     width: 100%;
     border-radius: 1rem;
+    position: relative;
 }
 
 /* BOX */
@@ -204,18 +218,15 @@ body {
 .button-style1 {
     border: none;
     outline: 1px solid #000;
-    /* Black outline */
     margin: 7px;
     padding: 8px 15px;
     background-color: #fff;
     color: #000;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    /* Smooth transition for both background and text color */
     border-radius: 45px;
     font-family: sans-serif;
     font-size: 17px;
-    /* Rounded corners */
 }
 
 .button-style1:hover,
@@ -238,8 +249,7 @@ body {
 
 @media (max-width: 480px) {
     .button-style1 {
-        font-size: 12px;
-        /* Smaller font size for phone */
+        font-size: 16px;
         padding: 5px 10px;
         margin: 6px;
     }
@@ -255,9 +265,12 @@ body {
     font-family: sans-serif;
     font-size: 17px;
     position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    z-index: 1000; /* Ensure the button appears above other content */
+    top: 10px;
+    /* Adjust as needed */
+    right: 10px;
+    /* Adjust as needed */
+    z-index: 1000;
+    /* Ensure the button appears above other content */
 }
 
 
@@ -267,6 +280,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 4rem;
+    margin-top: 7rem;
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    #filter {
+        margin-bottom: 0px; /* Adjust margin for mobile screens */
+        margin-top: 0rem;
+    }
 }
 
 /* CONTAINER */
@@ -1340,8 +1363,8 @@ header label {
 }
 
 /* SCROLL TO TOP */
-  
-  .progress-wrap {
+
+.progress-wrap {
     position: fixed;
     right: 50px;
     bottom: 50px;
@@ -1357,22 +1380,22 @@ header label {
     transform: translateY(15px);
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-  }
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .progress-wrap {
-      right: 20px;
-      bottom: 20px;
+        right: 20px;
+        bottom: 20px;
     }
-  }
+}
 
-  .progress-wrap.active-progress {
+.progress-wrap.active-progress {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-  }
-  
-  .progress-wrap::after {
+}
+
+.progress-wrap::after {
     position: absolute;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -1390,17 +1413,17 @@ header label {
     z-index: 1;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-  }
-  
-  .lightScrollIcon::after {
+}
+
+.lightScrollIcon::after {
     color: #ecedf3 !important;
-  }
-  
-  .progress-wrap:hover::after {
+}
+
+.progress-wrap:hover::after {
     opacity: 0;
-  }
-  
-  .progress-wrap::before {
+}
+
+.progress-wrap::before {
     position: absolute;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -1421,23 +1444,23 @@ header label {
     z-index: 2;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-  }
-  
-  .progress-wrap:hover::before {
+}
+
+.progress-wrap:hover::before {
     opacity: 1;
-  }
-  
-  .progress-wrap svg path {
+}
+
+.progress-wrap svg path {
     fill: none;
-  }
-  
-  .progress-wrap svg.progress-circle path {
+}
+
+.progress-wrap svg.progress-circle path {
     stroke: #1f2029;
     stroke-width: 4;
     box-sizing: border-box;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-  }
+}
 
 /* TABLE */
 
