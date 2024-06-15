@@ -266,11 +266,8 @@ body {
     font-size: 17px;
     position: absolute;
     top: 10px;
-    /* Adjust as needed */
     right: 10px;
-    /* Adjust as needed */
     z-index: 1000;
-    /* Ensure the button appears above other content */
 }
 
 
