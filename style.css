@@ -8,11 +8,76 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    padding-top: 4rem;
-    /* Add padding equal to the height of the header */
+
+
+/* NAVBAR */
+
+.logo {
+    font-size: 2rem; /* Increase the size of the icon */
 }
 
+.navbar {
+    padding-top: 0.5rem; /* Adjust padding to reduce height */
+    padding-bottom: 0.5rem; /* Adjust padding to reduce height */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    background-color: #fff; /* Optional: Set a background color to prevent transparency */
+
+}
+
+.nav-link{
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    font-size: 2rem; /* Increase the size of the icon */
+    padding: 0.5rem; /* Adjust padding to increase the click area without adding too much space */
+}
+
+.dropdown>.dropdown-menu{
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.lni-grid-alt{
+   font-size: 1.5rem;
+}
+
+.lni-cross-circle{
+    font-size: 2rem;
+}
+
+@media (min-width:992px){
+
+    .dropdown>.dropdown-menu{
+        visibility: hidden;
+        opacity: 0;
+        top: 100%;
+        display: block;
+        transition: all 0.1s ease-out;
+    }
+
+    .dropdown:hover>.dropdown-menu{
+        padding: 20px 0;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-item:hover{
+   color: #FFF;
+   background-color: #000;
+    }
+}
 
 
 /* ANIMATION */
@@ -1642,86 +1707,3 @@ header label {
 
 
 
-
-.accordion {
-    position: fixed;
-    top: 90px;
-    /* Adjust the top position as needed */
-    left: 20px;
-    /* Adjust the right position as needed */
-    z-index: 10;
-
-    max-width: 500px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 7px 15px -5px rgb(0 0 0 / 5%);
-    background-color: #fff;
-}
-
-.accordion summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding: 1em 1.5em;
-    color: #000000;
-    cursor: pointer;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
-.accordion summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion summary::after {
-    transform: translateY(-25%) rotate(45deg);
-    width: 7px;
-    height: 7px;
-    margin-left: 10px;
-    border-bottom: 3px solid #333333b3;
-    border-right: 3px solid #333333b3;
-    content: '';
-    transition: transform .3s;
-}
-
-.accordion[open] summary::after {
-    transform: rotate(225deg);
-}
-
-.accordion p {
-    transform: translateY(-10px);
-    opacity: 0;
-    margin: 0;
-    padding: .3em 2em 0.3em;
-    color: #333333;
-    transition: transform .5s, opacity .5s;
-}
-
-.accordion[open] p {
-    transform: none;
-    opacity: 1;
-}
-
-.accordion ul {
-    list-style-type: none;
-    /* Removes bullet points */
-    padding: 0;
-}
-
-.accordion ul li {
-    margin-bottom: 5px;
-    /* Adds some space between list items */
-}
-
-.accordion ul li a {
-    text-decoration: none;
-    /* Removes underline from links */
-    color: black;
-    /* Sets the link color */
-}
-
-.accordion ul li a:hover {
-    color: blue;
-    /* Changes link color on hover */
-}
