@@ -55,27 +55,56 @@
         </svg>
     </div>
     
-    <!-- HEADER -->
+ <!-- NAVBAR -->
 
-    <header>
+ <nav class="navbar navbar-expand-lg py-4 py-lg-0">
+
+    <div class="container px-4">
         <a href="index.html" class="logo">Saki</a>
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">MENU</label>
-        <nav class="navbar">
-            <ul>
-                <li><a href="About.html">About Me</a></li>
-                <li><a href='#'>Project +</a>
-                    <ul>
-                        <li><a href="HomeBody.html">HomeBody</a></li>
-                        <li><a href="WanderHost.html">WanderHost</a></li>
-                        <li><a href="Miyajima_Pharmacy.html">Miyajima Pharmacy</a></li>
-                        <li><a href="Signage.html">Digital Signage</a></li>
-                        <li><a href="Omotenashi.html">Omotenashi Connect</a></li>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#top-navbar" aria-controls="top-navbar">
+            <i class="lni lni-grid-alt"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+
+            <!-- Nav Bar Contents -->
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#top-navbar" aria-controls="top-navbar">
+                <div class="d-flex justify-content-between p-3">
+                    <img src="" alt="">
+                    <i class="lni lni-cross-circle"></i>
+                </div>
+            </button>
+            <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Project
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="HomeBody.html">HomeBody</a><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="WanderHost.html">WanderHost</a><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Miyajima_Pharmacy.html">Miyajima Pharmacy</a><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Signage.html">Digital Signage</a><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Omotenashi.html">Omotenashi Connect</a></li>
                     </ul>
                 </li>
+                <li class="nav-item px-3 px-lg-0 py-1 py-lg-4">
+                    <a class="nav-link" href="About.html">About Me</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
+</nav>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 
     <!-- TITLE -->
 

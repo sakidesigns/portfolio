@@ -14,7 +14,10 @@ html {
 
 .logo {
     font-size: 2rem; /* Increase the size of the icon */
+    color: inherit; /* Inherit the color from its parent element */
+    text-decoration: none; /* Remove the underline */
 }
+
 
 .navbar {
     padding-top: 0.5rem; /* Adjust padding to reduce height */
@@ -1005,7 +1008,7 @@ h5 {
     }
 }
 
-/* HEADER */
+/* HEADER 
 
 header {
     position: fixed;
@@ -1136,7 +1139,7 @@ header label {
     #menu-bar:checked~.navbar {
         display: initial;
     }
-}
+}*/
 
 /* ICON */
 
